@@ -1,0 +1,299 @@
+/*For creepy font in the horror section */
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/*For Comedy Title font */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+/*For Freindship Title font */
+@keyframes zoom {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.05);
+      }
+    }
+
+/*--------------------------------------------------------------------MAIN CODE-------------------------------------------------------------*/
+
+.Maincontainer {
+    display: flex;
+    justify-content: flex-start; 
+    background-color:#001f3f;
+
+}
+
+.logo img {   
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin-right: 120px;
+}
+
+/* --------------------- Main Navbar --------------------- */
+.Nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 150px;
+}
+
+.Nav li button {
+    margin-left: 95px;
+    margin-top: 12px;
+    width: 115px;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin-top: 40px;
+    border: none;
+    font-style: italic;
+    color: white;
+    line-height: 29px;
+    transition: all 0.3s; 
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+    background-color: #0760b8;
+}
+
+.Nav li:hover button {   
+    height: 70px;
+    width: 135px;
+    cursor: pointer;
+}
+
+/* --------------------- Signup and Login Navbar buttons---------------------------------------------------------------------------------------------------- --------------------- */
+.Button-Nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Button-Nav li button {
+    margin-left: 95px;
+    background-color:#0760b8;
+    width: 115px;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin-top: 40px;
+    border: none;
+    color: white;
+    font-style: italic;
+    transition: all 0.3s;
+    cursor: pointer;
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+}
+
+.Button-Nav li button:hover {
+    height: 70px;
+    width: 135px;
+    cursor: pointer;
+}
+h1{
+    color:#001f3f;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 450px;
+}
+h4{
+    color:#001f3f;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin-left: 550px;
+}
+
+/* -------------------------------------------------------------------------------Search bar here------------------------------------------------------------------------------------------------- */
+.Searchbar
+{
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+.Searchbar input[type="text"]
+{
+   height: 55px;
+   width: 80%;
+   border-radius:16px;
+   border-color:#001f3f;
+   color:#001f3f;
+
+}
+.Searchbar placeholder
+{
+    color:rgb(241, 214, 225);
+}
+/*---------------------------------------------------------------------------------Third Container----------------------------------------------------------------------------------------------------*/
+
+h3
+{
+    font-family: 'Ghost','Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-style: italic;
+    margin-left: 45%;
+    
+}
+.Third-Container
+{
+    width: 1500px;
+    height: 300px;
+    margin-top: 20px;
+    border: 2px solid #fcfcfc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+
+}
+.Horror1, .Horror2 ,.Horror3
+{
+    width: 450px;
+    height: 300px;
+    margin-left: 35px;
+    border: 1px solid black;
+}
+
+.Horror1 img, .Horror2 img ,.Horror3 img
+{
+    width: 450px;
+    height: 300px;
+    border-style: dashed;
+    transition:all;
+}
+.Horror1 img:hover, .Horror2 img:hover ,.Horror3 img:hover
+{
+    transform:scale(1.1);
+    filter: brightness(1.2);
+    opacity:1;
+}
+
+
+.overlay
+{
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bolder;
+    color: red;
+    font-family: 'Creepster', cursive;
+    transition-property: all;
+}
+
+.overlay:hover
+{
+    transform:translate(20px) skew(-25deg);
+}
+
+
+/*--------------------------------------------------------------------FOURTH_CONTAINER----------------------------------------------------------------------*/
+
+.Fourth_Container
+{
+    width: 1500px;
+    height: 300px;
+    margin-top: 50px;
+    border: 2px solid #fcfcfc;
+    border-radius: 10px;
+    background-color: #fafafa;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    
+}
+
+.Comedy1, .Comedy2 ,.Comedy3
+{
+    width: 450px;
+    height: 300px;
+    margin-left: 35px;
+    border: 1px solid black;
+}
+
+.Comedy1 img, .Comedy2 img ,.Comedy3 img
+{
+    width: 450px;
+    height: 300px;
+    border-style: dashed;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition:all;
+}
+.Comedy1 img:hover, .Comedy2 img:hover ,.Comedy3 img:hover
+{
+    transform:scale(1.1);
+    filter: brightness(1.2);
+}
+
+.overlay2
+{
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bolder;
+    margin-top: 20px;
+    color: green;
+    transition-property: all;
+    animation: bounce 1s infinite alternate;
+}
+/*-------------------------------------------------------------FIFTH_CONTAINER--------------------------------------------------------------------------------*/
+.Fifth_Container
+{
+    width: 1500px;
+    height: 300px;
+    margin-top: 20px;
+    border: 2px solid #fcfcfc;
+    border-radius: 10px;
+    background-color: #fafafa;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+.Pet1,.Pet2,.Pet3
+{
+    width: 450px;
+    height: 300px;
+    margin-left: 35px;
+    border: 1px solid black;
+}
+
+.Pet1 Img ,.Pet2 Img ,.Pet3 img
+{
+    width: 450px;
+    height: 300px;
+    border-style: dashed;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition:all;
+}
+
+.Pet1 img:hover, .Pet2 img:hover ,.Pet3 img:hover
+{
+    transform:scale(1.1);
+    filter: brightness(1.2);
+}
+
+.overlay3
+{ 
+font-family: 'Pacifico', cursive; 
+color: rgb(255, 0, 106);
+font-weight: bolder;
+animation: zoom 10s alternate-reverse;
+  
+}
+.Con 
+{
+    background-color:rgb(228, 225, 248);
+}
