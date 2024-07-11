@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Calculator.css">
+    <title>Calculator</title>
+  
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="Main_Container">
+
+        <div class="Screen">
+            <input id="calcScreen" placeholder="Calculate here " class="Js-Buttons" type="text" readonly>
+        </div>
+
+        <div class="Button_Container">
+          <button>9</button>
+          <button>8</button>
+          <button>7</button>
+          <button>6</button>
+          <button>5</button>
+          <button>4</button>
+          <button>3</button>
+          <button>2</button>
+          <button>1</button>
+          <button>0</button>
+          <button style="background-color:rgb(247, 115, 164);">+</button>
+          <button style="background-color:rgb(247, 115, 164);">-</button>
+          <button style="background-color:rgb(247, 115, 164);">*</button>
+          <button style="background-color:rgb(247, 115, 164);">/</button>
+          <button style="background-color:rgb(247, 115, 164);">=</button>
+          <button>.</button>
+          <button>C</button>
+        </div>
+    </div>
+
+    <script>
+        const screen = document.getElementById('calcScreen');
+        const buttons = document.querySelectorAll('.Button_Container button');
+        let screenValue = '';
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const buttonText = button.textContent;
+                if (buttonText === 'C') {
+                    screenValue = '';
+                    screen.value = screenValue;
+                } else if (buttonText === '=') {
+                    try {
+                        screen.value = eval(screenValue);
+                    } catch {
+                        screen.value = 'Error';
+                    }
+                } else {
+                    screenValue += buttonText;
+                    screen.value = screenValue;
+                    if(screen.value===Infinity)
+                    {
+                        alert('Bhai zero se kyu divide kare ho 😑');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
